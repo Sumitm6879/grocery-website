@@ -20,9 +20,11 @@
     font-size: .8rem;
     cursor: pointer;
     background: #eee;
+    transition: all ease .4s;
 }
 
 .btn:hover{
+    font-size: .9rem;
     background-color: var(--green);
     color: #fff;
     border: .1rem solid black;
