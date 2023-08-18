@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Font awesome icons CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">  
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>Grocery App</title>
+</head>
+<body style="height: 2000px;">
+    <div class="container">
+        <nav class="navbar fixed-top navbar-expand-md navbar-bg-custom" id="navbar">
+            <a href="#" class="navbar-brand mb-0 h1">
+                <img
+                style="background-color: rgba(0,0,0,0); background-size: cover;"
+                class="d-line-block align-top"
+                src="images/brandlogo.png" width="30" height="30"/>
+                Grocery </a>
+    
+            <button 
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            class="navbar-toggler"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse"
+            id="navbarNav">  
+            <a>
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a href="#home" class="nav-link active">
+                            Home 
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle"
+                        id="navbarDropdown" 
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu"
+                        aria-labelledby="navbarDropdown"
+                        >
+                        <li>
+                            <a href="#categories" class="dropdown-item dropdown-color">Dairy</a>
+                        </li>
+                        <li>
+                            <a href="#categories" class="dropdown-item dropdown-color">Vegetables</a>
+                        </li>
+                        <li>
+                            <a href="#categories" class="dropdown-item dropdown-color">Essentials</a>
+                        </li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">
+                            App 
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">
+                            Contact us 
+                        </a>
+                    </li>
+                </ul>
+            </a>
+            
+        </div>
+        <!-- ICONS search user cart -->
+        <div class="icons">
+            <div class="fa fa-search" id="search-btn"></div>
+            <div class="fa fa-shopping-cart" id="cart-btn"></div>
+            <div class="fa fa-user" id="user-btn"></div>
+        </div>
+
+        <form class="search-form">
+            <input type="text" id="search-box" placeholder="Search Here...">
+            <label for="search-box" class="fa fa-search"></label> 
+        </form>
+
+        <div class="shoping-cart">
+            <div class="box">
+                <i class="fa fa-trash"></i>  
+                <img src="images/f-totmatobg.png" height="100" width="100">
+                <div class="content">
+                    <h7>Tomato</h7><br>
+                    <span class="Price">$4.99</span>
+                    <span class="Quantity">QTY : 1</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fa fa-trash"></i>  
+                <img src="images/f-applesbg.png" height="100" width="100">
+                <div class="content">
+                    <h7>Apple</h7><br>
+                    <span class="Price">$7.99</span>
+                    <span class="Quantity">QTY : 1</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fa fa-trash"></i>  
+                <img src="images/f-potatobg.png" height="100" width="100">
+                <div class="content">
+                    <h7>Potato</h7> <br>
+                    <span class="Price">$9.99</span>
+                    <span class="Quantity">QTY : 3</span>
+                </div>
+            </div>
+
+            <div class="total">Total  :  $22.97/-</div>
+            <a href="#" class="btn">Checkout</a>
+        </div>
+
+        <form action="#" class="login-form">
+            <div class="title">Login Now</div>
+            <input type="email" class="form-control form-control-sm" placeholder="e.g. yourname@example.com">
+            <input type="password" class="form-control form-control-sm" placeholder="Enter password" aria-describedby="passwordHelpBlock">
+            <p>
+                Forgot password? <a href="#">Reset Now</a><br>
+                Don't have an account? <a href="#">Create Now</a>
+            </p>
+            <input type="submit" class="form-control btn" value="Login Now">
+        </form>
+
+        </nav>
+    </div>
+
+    <!-- Banner Section -->
+    <section class="home" id="home">
+        <div class="container-fluid banner-main">
+            <div class="container-md banner-title">
+                <h7>Fresh and <span>Organic</span> Products!</h7>
+            </div>
+            <div class="container-md banner-sub">
+                <p><span>Limited time SALE!</span><br>UPTO 50% off on ALL Organic Vegetables and Fruits!</p>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+        </div>
+    </section>
+    <!-- Banner Section -->
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container-md">
+            <h1 class="heading">Our <span>Features</span></h1>
+        </div>
+        <div class="container-md box-1">
+            <div class="box-2">
+                <img src="images/f-fruits.jpg" class="features-images">
+                <h3>Fresh and Organic Products</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="box-2">
+                <img src="images/secure payment.jpg" class="features-images">
+                <h3>Fast and Secure Payments</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="box-2">
+                <img src="images/fast-delivery-removebg.png" class="features-images">
+                <h3>Fast Delivery across India</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+    <!-- Features Section -->
+
+    <!-- Our Products -->
+    <section class="products" id="products">
+        <div class="container-md">
+            <h1 class="heading">Our <span>Products</span></h1>
+        </div>
+        <div class="container-md products-slider">
+            <div class="container-md wrapper">
+                <div class="container-md box-1">
+                    <img src="images/f-carrots.png" class="products-images">
+                    <h3>Carrot</h3>
+                    <div class="price">$2.59</div>
+                    <div class="container-md stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+                
+                <div class="container-md box-1">
+                    <img src="images/f-totmato.jpg" class="products-images">
+                    <h3>Tomato</h3>
+                    <div class="price">$4.99</div>
+                    <div class="container-md stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+                
+                <div class="container-md box-1">
+                    <img src="images/f-eggplant.jpg" class="products-images">
+                    <h3>Eggplant</h3>
+                    <div class="price">$3.89</div>
+                    <div class="container-md stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+                
+                <div class="container-md box-1">
+                    <img src="images/f-broccoli.jpg" class="products-images">
+                    <h3>Broccoli</h3>
+                    <div class="price">$5.59</div>
+                    <div class="container-md stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div class="container-md products-slider">
+            <div class="container-md wrapper">
+                <div class="container-md box-1">
+                    <img src="images/f-watermelon.jpg" class="products-images">
+                    <h3>Watermelon</h3>
+                    <div class="price">$5.99</div>
+                    <div class="container-md stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+                
+                <div class="container-md box-1">
+                    <img src="images/f-apples.jpg" class="products-images">
+                    <h3>Apple</h3>
+                    <div class="price">$7.99</div>
+                    <div class="container-md stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+                
+                <div class="container-md box-1">
+                    <img src="images/f-avacado.jpg" class="products-images">
+                    <h3>Avacado</h3>
+                    <div class="price">$9.09</div>
+                    <div class="container-md stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+                
+                <div class="container-md box-1">
+                    <img src="images/f-oranges.jpg" class="products-images">
+                    <h3>Orange</h3>
+                    <div class="price">$2.99</div>
+                    <div class="container-md stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Our Products -->
+
+    <!-- Categories -->
+    <section class="categories" id="categories">
+        <div class="container-md">
+            <h1 class="heading">Our <span> Categories</span></h1>
+        </div>
+        <div class="container-md categories-main">
+            <div class="container-md outer-bound">
+                <div class="container-md box-1">
+                    <img src="images/f-vegetables.jpg">
+                    <h3>Fresh and Organic Vegetables</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore pariatur assumenda quo vel minus necessitatibus vero provident ipsum</p>
+                </div>
+                <a href="#" class="btn">Order Now</a>
+            </div>
+
+            <div class="container-md outer-bound">
+                <div class="container-md box-1">
+                    <img src="images/f-fruits.jpg">
+                    <h3>Juicy Fruits</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore pariatur assumenda quo vel minus necessitatibus vero provident ipsum</p>
+                </div>
+                <a href="#" class="btn">Order Now</a>
+            </div>
+
+            <div class="container-md outer-bound">
+                <div class="container-md box-1">
+                    <img src="images/f-dairy.jpg">
+                    <h3>Best Quality Dairy Products</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore pariatur assumenda quo vel minus necessitatibus vero provident ipsum</p>
+                </div>
+                <a href="#" class="btn">Order Now</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container-fluid footer">
+        <div class="container-fluid footer-main box-1">
+            <img src="images/brandlogo.png" height="50px">
+            <h3>eGrocery</h3>
+        </div>
+    </footer>
+
+    <div class="footer-2">
+        <div class="containers">
+            <div class="row">
+                <div class="footer-col">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Sell on us</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Get Help</h3>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Order Status</a></li>
+                        <li><a href="#">Payment Options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Online Shop</h3>
+                    <ul>
+                        <li><a href="#">Vegetables</a></li>
+                        <li><a href="#">Fruits</a></li>
+                        <li><a href="#">Dairy</a></li>
+                        <li><a href="#">Meat</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Follow us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p>All Rights Reserved by @sanji</p>
+    </div>
+
+
+
+
+
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
